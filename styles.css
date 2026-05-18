@@ -1,0 +1,145 @@
+/* RESET RESPONSIVO GLOBAL (Esto arregla el problema de los desbordes en celular) */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a;
+    color: #f1f5f9;
+}
+
+header {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.95)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+}
+
+h1 { font-size: 3.5rem; color: #38bdf8; margin-bottom: 10px; font-weight: 800; letter-spacing: 1px;}
+p { font-size: 1.2rem; max-width: 600px; color: #cbd5e1; margin-bottom: 30px;}
+
+.container { 
+    width: 100%; 
+    max-width: 1100px; 
+    margin: auto; 
+    padding: 60px 20px; 
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #334155;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover { 
+    border-color: #38bdf8; 
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+
+.card i.fa-solid, .card i.fa-brands {
+    font-size: 3rem;
+    color: #38bdf8;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover i {
+    color: #f1f5f9;
+    transform: scale(1.1);
+}
+
+.price { font-size: 1.8rem; color: #10b981; font-weight: 900; margin: 15px 0; }
+
+.btn-ws {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #25d366;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.btn-ws:hover { 
+    background-color: #1ebc59; 
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+}
+
+.section-title {
+    text-align: center;
+    color: #f1f5f9;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #38bdf8;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* ESTILOS DEL BANNER DE EMPRESAS (Ya 100% responsivo) */
+.banner-empresas {
+    background-color: #1e293b; 
+    padding: 30px 20px; 
+    text-align: center; 
+    border-radius: 12px; 
+    margin-top: 60px; 
+    border: 1px dashed #38bdf8;
+    width: 100%;
+}
+
+.banner-empresas h4 {
+    color: #38bdf8; 
+    margin-top: 0;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.banner-empresas p {
+    font-size: 1rem; 
+    color: #cbd5e1;
+    margin: 0 auto;
+}
+
+/* ESTILOS DEL FOOTER (Ya 100% responsivo) */
+footer { 
+    text-align: center; 
+    padding: 40px 20px; 
+    color: #64748b; 
+    font-size: 0.95rem; 
+    border-top: 1px solid #334155; 
+    margin-top: 40px; 
+    line-height: 1.8;
+    width: 100%;
+}
