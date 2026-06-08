@@ -3,6 +3,21 @@
     box-sizing: border-box;
 }
 
+/*logo*/
+
+.logo-img {
+    max-width: 280px; /* Tamaño perfecto para que no se vea ni gigante ni muy chico */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 12px; /* Redondea las esquinas del fondo blanco para que se vea como una tarjeta premium */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); /* Le da un efecto de sombra elegante sobre tu fondo oscuro */
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05); /* Un pequeño efecto para que resalte cuando pasen el mouse */
+}
+
 body {
     margin: 0;
     padding: 0;
